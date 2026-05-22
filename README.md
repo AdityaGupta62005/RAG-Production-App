@@ -6,23 +6,23 @@ This project allows users to upload PDF documents, generate embeddings, store th
 
 ---
 
-# 🚀 Features
+# Features
 
-- 📄 Multi-PDF Upload Support
-- 💬 ChatGPT-style AI Chat Interface
-- 🧠 Semantic Search using Vector Embeddings
-- ⚡ FastAPI Backend
-- 🎨 Streamlit Frontend
-- 🗂️ Qdrant Vector Database Integration
-- 🔄 Event-Driven Workflows using Inngest
-- 📚 Context-Aware AI Responses
-- 🔍 Source-Based Retrieval
-- 📡 Real-Time Streaming Response Effect
-- 🧱 Modular Production-Style Backend Architecture
+-  Multi-PDF Upload Support
+-  ChatGPT-style AI Chat Interface
+-  Semantic Search using Vector Embeddings
+-  FastAPI Backend
+-  Streamlit Frontend
+-  Qdrant Vector Database Integration
+-  Event-Driven Workflows using Inngest
+-  Context-Aware AI Responses
+-  Source-Based Retrieval
+-  Real-Time Streaming Response Effect
+-  Modular Production-Style Backend Architecture
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 ```text
 Streamlit Frontend
@@ -52,7 +52,7 @@ Gemini LLM Response
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -68,7 +68,7 @@ Gemini LLM Response
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```bash
 RAGProductionApp/
@@ -136,7 +136,7 @@ source .venv/bin/activate
 
 ---
 
-## 3️⃣ Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -219,7 +219,7 @@ uv run streamlit run frontend/streamlit_app.py
 
 ---
 
-# 🧠 Key Concepts Used
+# Key Concepts Used
 
 - Retrieval-Augmented Generation (RAG)
 - Semantic Search
@@ -235,12 +235,16 @@ uv run streamlit run frontend/streamlit_app.py
 
 ## Chat Interface
 
-_Add screenshots here_
-
-```md
 <img width="1600" height="900" alt="logs" src="https://github.com/user-attachments/assets/c9349382-b712-4eaa-a278-e91d76d94678" />
+
+## Chat Interface
+
 <img width="1600" height="843" alt="Chat" src="https://github.com/user-attachments/assets/cba88d08-7590-4c66-84df-6aa72de8aac6" />
-```
+
+## Docker Images
+
+<img width="1600" height="850" alt="Docker" src="https://github.com/user-attachments/assets/d880801f-349e-4990-a7d6-3ce68c6a3833" />
+
 
 ---
 
@@ -255,7 +259,6 @@ _Add screenshots here_
 - PDF Preview
 - Citation-Based Answers
 - Cloud Deployment
-<img width="1600" height="850" alt="Docker" src="https://github.com/user-attachments/assets/d880801f-349e-4990-a7d6-3ce68c6a3833" />
 
 ---
 
