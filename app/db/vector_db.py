@@ -1,13 +1,21 @@
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
+import os
 
 
 class QdrantStorage:
-    # Changed dim back to 3072 to match gemini-embedding-2
-    def __init__(self, url="http://localhost:6333", collection="docs_gemini", dim=3072):
-        self.client = QdrantClient(url=url, timeout=30)
-        # ... rest of the init code stays the same
+    def __init__(self, url=None, collection="docs_gemini", dim=3072):
+
+        self.client = QdrantClient(
+            url=url or os.getenv(
+                "QDRANT_URL",
+                "http://qdrant:6333"
+            ),
+            timeout=30
+        )
+
         self.collection = collection
+        
         if not self.client.collection_exists(self.collection):
             self.client.create_collection(
                 collection_name=self.collection,
@@ -19,8 +27,6 @@ class QdrantStorage:
         self.client.upsert(self.collection, points=points)
 
     def search(self, query_vector, top_k: int = 5):
-        # 1. Use query_points instead of search
-        # 2. Change the argument from 'query_vector=' to 'query='
         response = self.client.query_points(
             collection_name=self.collection,
             query=query_vector,
@@ -31,7 +37,6 @@ class QdrantStorage:
         contexts = []
         sources = set()
 
-        # 3. Iterate over response.points instead of the raw response
         for r in response.points:
             payload = getattr(r, "payload", None) or {}
             text = payload.get("text", "")
