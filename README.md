@@ -235,11 +235,11 @@ uv run streamlit run frontend/streamlit_app.py
 
 ## Chat Interface
 
-<img width="1600" height="900" alt="logs" src="https://github.com/user-attachments/assets/c9349382-b712-4eaa-a278-e91d76d94678" />
-
-## Chat Interface
-
 <img width="1600" height="843" alt="Chat" src="https://github.com/user-attachments/assets/cba88d08-7590-4c66-84df-6aa72de8aac6" />
+
+## Inngest for checking and analyzing Logs
+
+<img width="1600" height="900" alt="logs" src="https://github.com/user-attachments/assets/c9349382-b712-4eaa-a278-e91d76d94678" />
 
 ## Docker Images
 
